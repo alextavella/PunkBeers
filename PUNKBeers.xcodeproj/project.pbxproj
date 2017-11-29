@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		69D0BD40AB9F777EECD0EBD6 /* Pods_PUNKBeers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2013382BED0CA17E3FFB62C1 /* Pods_PUNKBeers.framework */; };
+		C4030C0E1FCF4D3C008DEB67 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4030C0D1FCF4D3C008DEB67 /* Media.xcassets */; };
 		C4A93E961FC849C800E85837 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A93E951FC849C800E85837 /* BeerDetailsViewController.swift */; };
 		C4C71CEB1FC5BA2A00E8A2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C71CEA1FC5BA2A00E8A2CC /* AppDelegate.swift */; };
 		C4C71CED1FC5BA2A00E8A2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C71CEC1FC5BA2A00E8A2CC /* ViewController.swift */; };
-		C4C71CF21FC5BA2A00E8A2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C71CF11FC5BA2A00E8A2CC /* Assets.xcassets */; };
 		C4C71D011FC5BDA400E8A2CC /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C71D001FC5BDA400E8A2CC /* HttpClient.swift */; };
 		C4C71D031FC5BE3700E8A2CC /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C71D021FC5BE3700E8A2CC /* BeerService.swift */; };
 		C4C71D061FC5BF3800E8A2CC /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C71D051FC5BF3800E8A2CC /* Beer.swift */; };
@@ -27,11 +27,11 @@
 /* Begin PBXFileReference section */
 		2013382BED0CA17E3FFB62C1 /* Pods_PUNKBeers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PUNKBeers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58080A2ED26AB2170F28CDF4 /* Pods-PUNKBeers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.release.xcconfig"; sourceTree = "<group>"; };
+		C4030C0D1FCF4D3C008DEB67 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C4A93E951FC849C800E85837 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
 		C4C71CE71FC5BA2A00E8A2CC /* PUNKBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUNKBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C71CEA1FC5BA2A00E8A2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C71CEC1FC5BA2A00E8A2CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4C71CF11FC5BA2A00E8A2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C71CF61FC5BA2A00E8A2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4C71D001FC5BDA400E8A2CC /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		C4C71D021FC5BE3700E8A2CC /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
@@ -84,10 +84,10 @@
 				C4C71CFE1FC5BD9300E8A2CC /* Services */,
 				C4C71CEA1FC5BA2A00E8A2CC /* AppDelegate.swift */,
 				C4C71CEC1FC5BA2A00E8A2CC /* ViewController.swift */,
-				C4C71CF11FC5BA2A00E8A2CC /* Assets.xcassets */,
 				C4C71CF61FC5BA2A00E8A2CC /* Info.plist */,
 				C4C71D141FC60C6900E8A2CC /* Main.storyboard */,
 				C4C71D1A1FC613C400E8A2CC /* LaunchScreen.storyboard */,
+				C4030C0D1FCF4D3C008DEB67 /* Media.xcassets */,
 			);
 			path = PUNKBeers;
 			sourceTree = "<group>";
@@ -218,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C71D1B1FC613C400E8A2CC /* LaunchScreen.storyboard in Resources */,
+				C4030C0E1FCF4D3C008DEB67 /* Media.xcassets in Resources */,
 				C4C71D151FC60C6900E8A2CC /* Main.storyboard in Resources */,
-				C4C71CF21FC5BA2A00E8A2CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +412,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E35A54968611CDD376EE6315 /* Pods-PUNKBeers.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3PT499D5S;
 				INFOPLIST_FILE = PUNKBeers/Info.plist;
@@ -428,7 +427,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58080A2ED26AB2170F28CDF4 /* Pods-PUNKBeers.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3PT499D5S;
 				INFOPLIST_FILE = PUNKBeers/Info.plist;
