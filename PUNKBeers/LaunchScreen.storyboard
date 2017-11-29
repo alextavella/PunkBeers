@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kailasa.ttc">
+            <string>Kailasa-Bold</string>
+        </array>
+        <array key="SnellRoundhand.ttc">
+            <string>SnellRoundhand</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpo-aF-eiR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="Qh4-8x-8sc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cJt-jr-FFB">
+                                        <rect key="frame" x="125" y="270" width="125" height="125.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNK" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="57"/>
+                                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="44"/>
+                                                <color key="highlightedColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beers" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-cH-qjV">
+                                                <rect key="frame" x="0.0" y="57" width="125" height="68.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="54"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="highlightedColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017 Alex Tavella. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                        <rect key="frame" x="56" y="645.5" width="262.5" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qh4-8x-8sc" secondAttribute="trailing" id="1fM-Wh-4Bv"/>
+                                    <constraint firstItem="Qh4-8x-8sc" firstAttribute="top" secondItem="hpo-aF-eiR" secondAttribute="top" id="ApL-S0-Xw1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qh4-8x-8sc" secondAttribute="bottom" id="BVB-CQ-Wwj"/>
+                                    <constraint firstItem="cJt-jr-FFB" firstAttribute="centerY" secondItem="hpo-aF-eiR" secondAttribute="centerY" id="DTV-Sn-i3I"/>
+                                    <constraint firstItem="cJt-jr-FFB" firstAttribute="centerX" secondItem="hpo-aF-eiR" secondAttribute="centerX" id="P6G-oF-WYc"/>
+                                    <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="8" id="lg7-Cj-wRG"/>
+                                    <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="hpo-aF-eiR" secondAttribute="centerX" id="vb3-XT-2VV"/>
+                                    <constraint firstItem="Qh4-8x-8sc" firstAttribute="leading" secondItem="hpo-aF-eiR" secondAttribute="leading" id="wnY-U5-uyJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hpo-aF-eiR" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="AWO-en-TAs"/>
+                            <constraint firstItem="hpo-aF-eiR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OLE-v9-Cdf"/>
+                            <constraint firstItem="hpo-aF-eiR" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" id="Pdq-QP-gUw"/>
+                            <constraint firstItem="hpo-aF-eiR" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="kXf-4C-sM3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beer" width="831" height="578"/>
+    </resources>
+</document>
